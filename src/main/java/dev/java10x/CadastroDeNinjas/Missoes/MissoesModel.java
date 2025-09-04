@@ -7,6 +7,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity
 @Table(name = "tb_missoes")
 @NoArgsConstructor // Anotation do lombok para criar construtor
@@ -28,6 +30,6 @@ public class MissoesModel {
 
     // One MissoesModel to Many NinjaModel
     @OneToMany(mappedBy = "missoes")
-    private NinjaModel ninja;
+    private List<NinjaModel> ninja;
 
 }

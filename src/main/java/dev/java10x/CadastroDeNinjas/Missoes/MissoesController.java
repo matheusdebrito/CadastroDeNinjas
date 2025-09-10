@@ -25,8 +25,9 @@ public class MissoesController {
     }
 
     @PostMapping("/criar")
-    public String criarMissao(){
-        return "Missão criada com sucesso";
+    // @RequestBody significa que vai pegar a variável do body da requisição
+    public MissoesModel criarMissao(@RequestBody MissoesModel missao){
+        return missoesService.criarMissao(missao);
     }
 
     @PutMapping("/alterar")

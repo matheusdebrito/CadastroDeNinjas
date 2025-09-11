@@ -23,7 +23,7 @@ public class NinjaController {
     // Adicionar ninja
     @PostMapping("/criar")
     // @RequestBody significa que vai pegar a variável do body da requisição
-    public NinjaModel criarNinja(@RequestBody NinjaModel ninja) {
+    public NinjaDTO criarNinja(@RequestBody NinjaDTO ninja) {
         return ninjaService.criarNinja(ninja);
     }
 

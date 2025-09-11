@@ -28,11 +28,14 @@ public class NinjaModel {
     @Column(unique = true)
     private String email;
 
-    @Column(name = "idade")
-    private int idade;
-
     @Column(name = "img_url")
     private String imagemUrl;
+
+    @Column(name = "rank")
+    private String rank;
+
+    @Column(name = "idade")
+    private int idade;
 
     // Many NinjaModel to One MissoesModel
     @ManyToOne

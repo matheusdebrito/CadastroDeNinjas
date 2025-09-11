@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
 @NoArgsConstructor // Anotation do lombok para criar construtor
 @AllArgsConstructor // Anotation do lombok para criar construtor
 @Data // Cria os getters e os setters
+@Setter
 public class NinjaModel {
 
     @Id
@@ -36,5 +38,9 @@ public class NinjaModel {
     @ManyToOne
     @JoinColumn(name = "missoes_id")
     private MissoesModel missoes;
+
+    public void setId(Long id){
+        this.id = id;
+    }
 
 }

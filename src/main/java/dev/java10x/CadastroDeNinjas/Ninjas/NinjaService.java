@@ -36,7 +36,7 @@ public class NinjaService {
         return ninjaMapper.map(ninja);
     }
 
-    public void deletarNinja(Long id){
+    public void deletarNinjaPorId(Long id){
         ninjaRepository.deleteById(id);
     }
 

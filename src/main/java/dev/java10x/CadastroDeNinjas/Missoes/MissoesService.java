@@ -38,11 +38,11 @@ public class MissoesService {
 
     }
 
-    public void deletarMissao(Long id){
+    public void deletarMissaoPorId(Long id){
         missoesRespository.deleteById(id);
     }
 
-    public MissoesDTO atualizarMissão(Long id, MissoesDTO missaoDTO){
+    public MissoesDTO atualizarMissao(Long id, MissoesDTO missaoDTO){
         Optional<MissoesModel> missaoExistente = missoesRespository.findById(id);
         if (missaoExistente.isPresent()){
             MissoesModel missaoAtualizada = missoesMapper.map(missaoDTO);

@@ -7,6 +7,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.util.List;
 
@@ -15,6 +16,7 @@ import java.util.List;
 @NoArgsConstructor // Anotation do lombok para criar construtor
 @AllArgsConstructor // Anotation do lombok para criar construtor
 @Data // Cria os getters e os setters
+@ToString
 public class MissoesModel {
 
     @Id

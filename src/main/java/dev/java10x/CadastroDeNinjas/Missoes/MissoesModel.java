@@ -34,7 +34,7 @@ public class MissoesModel {
     // One MissoesModel to Many NinjaModel
     @OneToMany(mappedBy = "missoes")
     @JsonIgnore
-    private List<NinjaModel> ninja;
+    private List<NinjaModel> ninjas;
 
     public void setId(Long id){
         this.id = id;

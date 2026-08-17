@@ -1,9 +1,8 @@
-package dev.java10x.cadastroDeNinjas.Missoes.Service;
+package dev.java10x.cadastroDeNinjas.Missoes;
 
 
-import dev.java10x.cadastroDeNinjas.Ninjas.Service.NinjaModel;
+import dev.java10x.cadastroDeNinjas.Ninjas.NinjaModel;
 import jakarta.persistence.*;
-import dev.java10x.cadastroDeNinjas.Ninjas.Service.NinjaModel;
 
 import java.util.List;
 
@@ -16,6 +15,6 @@ public class MissoesModel {
     private String nome;
     private MissaoDificuldade dificuldade;
     @OneToMany(mappedBy = "missoes") // Uma missão pode ter vários ninjas (One missao To Many ninjas)
-    private List<NinjaModel> ninja;
+    private List<NinjaModel> ninjas;
 
 }

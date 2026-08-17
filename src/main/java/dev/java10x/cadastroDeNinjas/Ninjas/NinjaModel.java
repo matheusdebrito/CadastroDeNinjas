@@ -1,10 +1,8 @@
-package dev.java10x.cadastroDeNinjas.Ninjas.Service;
+package dev.java10x.cadastroDeNinjas.Ninjas;
 
 
-import dev.java10x.cadastroDeNinjas.Missoes.Service.MissoesModel;
+import dev.java10x.cadastroDeNinjas.Missoes.MissoesModel;
 import jakarta.persistence.*;
-
-import java.util.List;
 
 @Entity
 @Table(name = "tb_cadastro")

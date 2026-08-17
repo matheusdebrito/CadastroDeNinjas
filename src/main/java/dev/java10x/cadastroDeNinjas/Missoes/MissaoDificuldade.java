@@ -1,4 +1,4 @@
-package dev.java10x.cadastroDeNinjas.Missoes.Service;
+package dev.java10x.cadastroDeNinjas.Missoes;
 
 public enum MissaoDificuldade {
     D,

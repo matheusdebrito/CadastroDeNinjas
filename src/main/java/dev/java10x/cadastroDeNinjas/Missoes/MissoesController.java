@@ -14,25 +14,19 @@ public class MissoesController {
 
     // Mostrar Todos os Missoes (READ)
 
-    @GetMapping("/todas")
+    @GetMapping("/listar")
     public String mostrarTodasAsMissoes(){
         return "Todas";
     }
 
-    // Procurar Missao por id (READ)
-    @GetMapping("/todasID")
-    public String mostrarTodasAsMissoesPorId(){
-        return "Missao por id";
-    }
-
     // Alterar dados dos Missoes (UPDATE)
-    @PutMapping("/alterarID")
+    @PutMapping("/alterar")
     public String alterarMissaoPorId(){
         return "Missao alterada";
     }
 
     // Deletar Missao (DELETE)
-    @DeleteMapping("/deletarID")
+    @DeleteMapping("/deletar")
     public String deletarMissaoPorId(){
         return "Missao deletada";
     }

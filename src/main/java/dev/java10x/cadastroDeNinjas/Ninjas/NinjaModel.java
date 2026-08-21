@@ -24,7 +24,7 @@ public class NinjaModel {
     @Column(name = "img_url")
     private String imgUrl;
     @Column(name = "idade")
-    private int idade;
+    private Integer idade;
     @ManyToOne
     @JoinColumn(name = "missoes_id")
     private MissoesModel missoes;

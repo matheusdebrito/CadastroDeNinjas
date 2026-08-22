@@ -1,35 +1,29 @@
 package dev.java10x.cadastroDeNinjas.Ninjas;
 
-
 import dev.java10x.cadastroDeNinjas.Missoes.MissoesModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Table(name = "tb_cadastro")
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class NinjaModel {
+@NoArgsConstructor
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class NinjaDTO {
+
     private Long id;
-    @Column(name = "nome")
+
     private String nome;
-    @Column(unique = true)
+
     private String email;
-    @Column(name = "img_url")
+
     private String imgUrl;
-    @Column(name = "rank")
-    private String rank;
-    @Column(name = "idade")
+
     private Integer idade;
-    @ManyToOne
-    @JoinColumn(name = "missoes_id")
+
     private MissoesModel missoes;
 
+    private String rank;
 
 }
